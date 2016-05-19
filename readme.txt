@@ -28,16 +28,22 @@ USAGE
 Create csv of municipalities/regions and their associated pricing level 
 ('small', 'medium', 'large') based off population.  First column should 
 contain municipality/region name, while the second should contain one of the
-pricing levels OR an associated population.
+pricing levels.
 
 Create template of each product/variant in Shopify.com product csv input
-format for 'Edmonton'.  Name file template.csv
-*Inputted template must have exact name
+format for 'Edmonton'.
 
 Place both of these in /inputs/ and run program.
+
+*Run (1) non-school-listing with non-school-template, (2) school-listing 
+with school-template, and (3) school-listing with non-school-template to get
+entire set of products.
 
 
 OUTPUTS
 
 Generated-Shopify-Products.csv - All generated products in 
 			         Shopify.com-compatible csv format
+
+*Csv file is usually too large for Shopify import, split into <= 40k lines
+per file.
